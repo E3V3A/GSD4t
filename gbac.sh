@@ -19,8 +19,8 @@ GPSTAR="GPS_${DATE}_${TIME}"
 
 # All the files we need:
 GPSLOGFILES="AGPSLog.txt BriefLog.txt CLM*.log DetailedLog.txt ee_download_debug.txt sirf_interface_log.txt SLCLog.gp2"
-GPSNVMFILES="NVM0 NVM1 NVM2 NVM3 NVM5 NVM6 NVM13"
-#GPSNVMFILES=$(eval echo "NVM{0..13}")				    # Not supported in mksh. Instead use...
+GPSNVMFILES="NVM0 NVM1 NVM2 NVM3 NVM5 NVM6 NVM13"		# May need additional ones, depending...
+#GPSNVMFILES=$(eval echo "NVM{0..13}")				# Not supported in mksh. Instead use...
 #GPSNVMFILES=$(eval echo "NVM{$(seq -s , 0 1 13)}")		# ..this, which depend on Busybox "seq".
 GPSCONFILES="gps.conf sirfgps.conf"
 
